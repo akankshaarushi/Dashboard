@@ -2,10 +2,17 @@
   width: 130px;
   background-color: #111d2d;
   display: flex;
-  height: 110vh;
   flex-direction: column;
+  justify-content: space-between;
+  height: 150vh;
   align-items: center;
   padding-top: 20px;
+}
+
+.sidebar-icons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .sidebar-icon {
@@ -14,21 +21,24 @@
   font-size: 24px;
 }
 
+.sidebar-icon-settings {
+  margin-bottom: 20px;
+}
+
 @media (max-width: 1200px) {
   .sidebar {
     height: 215vh;
- 
   }
 }
+
 @media (max-width: 992px) {
   .sidebar {
     height: 215vh;
- 
   }
 }
+
 @media (max-width: 480px) {
   .sidebar {
     height: 360vh;
- 
   }
 }
