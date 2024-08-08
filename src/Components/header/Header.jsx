@@ -5,6 +5,8 @@ import NotificationsIcon from "@mui/icons-material/Notifications";
 import EmailIcon from "@mui/icons-material/Email";
 import SettingsIcon from "@mui/icons-material/Settings";
 import MenuIcon from "@mui/icons-material/Menu";
+import Avatar from "@mui/material/Avatar"; // Import MUI Avatar component
+
 
 function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -29,7 +31,13 @@ function Header() {
           <NotificationsIcon className="icons notification-icon" />
           <span className="notification-badge"></span>
         </div>
-        <div className="user-avatar"></div>
+        <div className="user-avatar">
+        <Avatar
+              alt="Devon Lane"
+              src="/images.jpg"
+              className="abcd"
+            />
+        </div>
       </div>
     </div>
   );
