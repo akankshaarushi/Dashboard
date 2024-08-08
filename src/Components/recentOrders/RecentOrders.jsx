@@ -1,5 +1,5 @@
-import React from 'react';
-import './RecentOrders.css';
+import React from "react";
+import "./RecentOrders.css";
 
 function RecentOrders() {
   return (
@@ -18,7 +18,7 @@ function RecentOrders() {
           <tr>
             <td>
               <div className="customer-info">
-                <img src="path/to/avatar1.png" alt="Wade Warren" className="avatar" />
+                <img src="/images.jpg" alt="Wade Warren" className="avatar" />
                 <span>Wade Warren</span>
               </div>
             </td>
@@ -29,7 +29,7 @@ function RecentOrders() {
           <tr>
             <td>
               <div className="customer-info">
-                <img src="path/to/avatar2.png" alt="Jane Cooper" className="avatar" />
+                <img src="/images.jpg" alt="Jane Cooper" className="avatar" />
                 <span>Jane Cooper</span>
               </div>
             </td>
@@ -40,7 +40,7 @@ function RecentOrders() {
           <tr>
             <td>
               <div className="customer-info">
-                <img src="path/to/avatar3.png" alt="Guy Hawkins" className="avatar" />
+                <img src="/images.jpg" alt="Guy Hawkins" className="avatar" />
                 <span>Guy Hawkins</span>
               </div>
             </td>
@@ -51,7 +51,11 @@ function RecentOrders() {
           <tr>
             <td>
               <div className="customer-info">
-                <img src="path/to/avatar4.png" alt="Kristin Watson" className="avatar" />
+                <img
+                  src="/images.jpg"
+                  alt="Kristin Watson"
+                  className="avatar"
+                />
                 <span>Kristin Watson</span>
               </div>
             </td>
@@ -62,7 +66,7 @@ function RecentOrders() {
           <tr>
             <td>
               <div className="customer-info">
-                <img src="path/to/avatar5.png" alt="Cody Fisher" className="avatar" />
+                <img src="/images.jpg" alt="Cody Fisher" className="avatar" />
                 <span>Cody Fisher</span>
               </div>
             </td>
@@ -73,7 +77,11 @@ function RecentOrders() {
           <tr>
             <td>
               <div className="customer-info">
-                <img src="path/to/avatar6.png" alt="Savannah Nguyen" className="avatar" />
+                <img
+                  src="/images.jpg"
+                  alt="Savannah Nguyen"
+                  className="avatar"
+                />
                 <span>Savannah Nguyen</span>
               </div>
             </td>
