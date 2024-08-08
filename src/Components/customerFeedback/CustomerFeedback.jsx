@@ -11,7 +11,7 @@ function CustomerFeedback() {
           <div className="feedback-header">
             <Avatar
               alt="Jenny Wilson"
-              src="/path/to/jenny-wilson.jpg"
+               src="/images.jpg"
               className="avatar"
             />
             <p className="customer-name">Jenny Wilson</p>
@@ -29,7 +29,7 @@ function CustomerFeedback() {
           <div className="feedback-header">
             <Avatar
               alt="Diane Russell"
-              src="/path/to/diane-russell.jpg"
+               src="/images.jpg"
               className="avatar"
             />
             <p className="customer-name">Diane Russell</p>
@@ -44,7 +44,7 @@ function CustomerFeedback() {
           <div className="feedback-header">
             <Avatar
               alt="Devon Lane"
-              src="/path/to/devon-lane.jpg"
+               src="/images.jpg"
               className="avatar"
             />
             <p className="customer-name">Devon Lane</p>
