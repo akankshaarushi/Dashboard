@@ -1,0 +1,48 @@
+.activity {
+  background-color: #111d2d;
+  padding: 20px;
+  border-radius: 10px;
+  width: 100%;
+  flex: 0 0 60%; /* Default flex basis */
+}
+
+/* Mobile view adjustments */
+@media (max-width: 1200px) {
+  .activity {
+    flex: 0 0 50%; /* Adjust width for medium screens */
+    padding: 0;
+  }
+}
+
+
+/* Mobile view adjustments */
+@media (max-width: 992px) {
+  .activity {
+    flex: 0 0 50%; /* Adjust width for medium screens */
+    padding: 0;
+  }
+}
+
+
+/* Mobile view adjustments */
+@media (max-width: 768px) {
+  .activity {
+    flex: 0 0 50%; /* Adjust width for medium screens */
+    padding: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .activity {
+    flex: 0 0 30%; /* Adjust width for smaller screens */
+  }
+
+  .activity .header h3 {
+    font-size: 16px; /* Adjust font size */
+  }
+
+  .activity .dropdown {
+    font-size: 12px; /* Adjust font size */
+    padding: 5px 10px; /* Adjust padding */
+  }
+}

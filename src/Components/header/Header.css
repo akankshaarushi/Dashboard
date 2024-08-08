@@ -1,0 +1,133 @@
+.header {
+  height: 80px;
+  background-color: #111d2d;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  padding: 0 20px; /* Add padding for spacing */
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin-left: 30px;
+}
+
+.search-bar input {
+  background-color: #323232;
+  border: 1px solid #716c6c;
+  color: white;
+  padding: 10px 10px 10px 40px; /* Adjust padding for larger height and to fit icon */
+  border-radius: 5px;
+  width: 300px; /* Increased width */
+  height: 20px; /* Adjust height */
+}
+
+.search-icon {
+  position: absolute;
+  left: 10px; /* Position inside input */
+  color: white;
+  top: 50%; /* Center the icon vertically */
+  transform: translateY(-50%);
+}
+
+.header-icons {
+  display: flex;
+  align-items: center;
+  margin-right: 30px;
+}
+
+.icons {
+  background-color: #333; /* Grey background for icons */
+  border-radius: 50%; /* Circular background */
+  padding: 10px; /* Space around the icon */
+  margin-right: 20px; /* Space between icons */
+  display: flex; /* Flexbox for center alignment */
+  align-items: center; /* Center icon vertically */
+  justify-content: center; /* Center icon horizontally */
+}
+
+.email-icon {
+  background-color: #444; /* Custom grey color for email icon background */
+  color: #c0bdbd; /* Grey color for email icon */
+}
+
+.settings-icon {
+  background-color: #444; /* Custom grey color for settings icon background */
+  color: #c0bdbd; /* Grey color for settings icon */
+}
+
+.notification-container {
+  position: relative;
+}
+
+.notification-icon {
+  background-color: #444; /* Custom grey color for notification icon background */
+  color: #c0bdbd; /* Grey color for notification icon */
+  margin-top: 10px;
+}
+
+.notification-badge {
+  position: absolute;
+  top: 19px;
+  left: 25px;
+  width: 10px;
+  height: 10px;
+  background-color: blue;
+  border-radius: 50%;
+}
+
+.user-avatar {
+  width: 45px;
+  height: 45px;
+  background-color: #666;
+  border-radius: 50%;
+  margin-top: 10px;
+}
+
+.hamburger-menu {
+  display: none; /* Initially hidden */
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .search-bar {
+    margin-left: 10px;
+    width: 70%; /* Adjust width */
+  }
+
+  .search-bar input {
+    width: 100%;
+  }
+
+  .user-avatar {
+    width: 45px;
+    height: 45px;
+    background-color: #666;
+    border-radius: 50%;
+    margin-top: 10px;
+    margin-right: 25px;
+  }
+
+  .header-icons {
+    display: none; /* Hidden initially in mobile view */
+    position: absolute;
+    top: 35px;
+    padding: 10px 0;
+    border-radius: 5px;
+  }
+
+  .settings-icon {
+    margin-top: 10px;
+  }
+
+  .header-icons.show {
+    display: flex; /* Show when menu is open */
+  }
+
+  .hamburger-menu {
+    display: block; /* Show hamburger menu in mobile view */
+  }
+}

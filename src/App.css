@@ -1,0 +1,133 @@
+.app {
+  display: flex;
+  color: #ffffff;
+}
+
+.heading {
+  font-size: 25px;
+  font-weight: bold;
+  margin-top: 10px;
+  margin-bottom: 25px;
+  margin-left: 10px;
+}
+
+.main-content {
+  height: 100vh;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.dashboard {
+  padding: 20px;
+}
+
+.stats {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  gap: 20px;
+}
+
+.other-sections {
+  display: flex;
+  gap: 20px;
+  padding-bottom: 30px;
+}
+
+.lower-section {
+  display: flex;
+  gap: 20px;
+}
+
+@media (max-width: 992px) {
+  .stats,
+  .lower-section {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .heading {
+    font-size: 20px;
+  }
+
+  .dashboard {
+    padding: 5px;
+  }
+
+  .total-orders .percentage p:nth-child(1) {
+    font-size: 30px;
+  }
+
+  .total-orders .percentage p:nth-child(2) {
+    font-size: 12px;
+  }
+
+  .net-profit .text-section p {
+    font-size: 40px;
+  }
+
+  .net-profit .text-section h3 {
+    font-size: 16px;
+  }
+
+  .net-profit .percentage-change {
+    font-size: 14px;
+  }
+
+  .other-sections {
+    display: flex;
+    flex-direction: column;
+  }
+  
+}
+@media (max-width: 1200px) {
+  .other-sections {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 768px) {
+  .other-sections {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+
+@media (max-width: 480px) {
+  .stats,
+  .lower-section {
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .heading {
+    font-size: 18px;
+  }
+
+  .total-orders .percentage p:nth-child(1) {
+    font-size: 25px;
+  }
+
+  .total-orders .percentage p:nth-child(2) {
+    font-size: 10px;
+  }
+
+  .net-profit .text-section p {
+    font-size: 30px;
+  }
+
+  .net-profit .text-section h3 {
+    font-size: 14px;
+  }
+
+  .net-profit .percentage-change {
+    font-size: 12px;
+  }
+  .other-sections {
+    display: flex;
+    flex-direction: column;
+  }
+}

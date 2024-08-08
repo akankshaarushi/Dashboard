@@ -1,0 +1,144 @@
+.net-profit {
+  background-color: #111d2d;
+  padding: 20px;
+  border-radius: 10px;
+  flex: 2 0 30%; /* Adjust the flex property to take 30% of the space */
+  display: flex; /* Use flexbox */
+  justify-content: space-between; /* Space between text and progress bar */
+  align-items: center; /* Center items vertically */
+}
+
+.text-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Space items vertically */
+  margin-right: 20px; /* Add some space between text-section and progress-bar-container */
+  height: 160px; /* Set height to ensure vertical spacing */
+}
+
+.text-section h3 {
+  margin: 0; /* Remove default margin */
+  font-size: 18px; /* Adjust font size as needed */
+}
+
+.text-section p {
+  font-size: 60px; /* Adjust font size for amount */
+  margin: 0; /* Remove default margin */
+}
+
+.percentage-change {
+  font-size: 18px; /* Adjust font size for percentage change */
+  color: green;
+}
+
+.progress-bar-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center the progress bar and text horizontally */
+}
+
+.progress-bar-wrapper {
+  position: relative; /* Positioning context for the overlay text */
+  width: 120px;
+  height: 120px; /* Adjust height to make the progress bar more circular */
+}
+
+.progress-bar-text {
+  position: absolute;
+  top: 50%; /* Center the text vertically within the circle */
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center; /* Center text horizontally */
+}
+
+.percentage-text {
+  font-size: 15px; /* Font size for percentage text */
+}
+
+.goal-text {
+  font-size: 10px; /* Font size for goal text */
+  margin-top: 5px; /* Space between percentage and goal text */
+}
+
+.additional-text {
+  margin-top: 20px; /* Space between the progress bar and the additional text */
+  font-size: 10px; /* Smaller font size for additional text */
+}
+
+@media (max-width: 1200px) {
+  .net-profit {
+    padding:8px;
+  }
+
+  .text-section {
+    margin-right: 0;
+    margin-bottom: 15px;
+    height: auto;
+  }
+
+  .text-section h3 {
+    font-size: 11px;
+    margin-bottom: 28px;
+  }
+
+  .text-section p {
+    font-size: 36px;
+    margin-bottom: 36px;
+  }
+
+  .percentage-change {
+    font-size: 14px;
+  }
+
+  .progress-bar-wrapper {
+    width: 100px;
+    height: 100px;
+  }
+
+  .percentage-text {
+    font-size: 12px;
+  }
+
+  .goal-text {
+    font-size: 8px;
+  }
+
+  .additional-text {
+    font-size: 8px;
+  }
+}
+
+@media (max-width: 480px) {
+  .net-profit {
+    padding: 10px;
+  }
+
+  .text-section h3 {
+    font-size: 14px;
+  }
+
+  .text-section p {
+    font-size: 30px;
+  }
+
+  .percentage-change {
+    font-size: 12px;
+  }
+
+  .progress-bar-wrapper {
+    width: 80px;
+    height: 80px;
+  }
+
+  .percentage-text {
+    font-size: 10px;
+  }
+
+  .goal-text {
+    font-size: 6px;
+  }
+
+  .additional-text {
+    font-size: 6px;
+  }
+}

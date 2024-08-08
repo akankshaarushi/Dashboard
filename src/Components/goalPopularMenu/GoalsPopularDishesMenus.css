@@ -1,0 +1,135 @@
+.goals-popular-dishes-menus {
+  display: flex;
+  justify-content: space-between;
+  background-color: #111d2d;
+  padding: 35px;
+  border-radius: 10px;
+  width: 100%;
+  gap: 20px; /* Add gap between columns */
+  padding-top: 35px;
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+  flex: 1;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px; /* Space between rows */
+  position: relative; /* Position relative to control arrow icon positioning */
+}
+
+.text {
+  font-size: 20px;
+  margin-left: 20px;
+}
+
+.icons-containers {
+  width: 100px; /* Container width */
+  height: 100px; /* Container height */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%; /* Rounded background */
+  margin-right: 10px; /* Space between icon and text */
+  position: relative; /* Position relative to control icon position */
+  background-color: rgba(
+    255,
+    0,
+    0,
+    0.2
+  ); /* Default background color, will be overridden */
+}
+
+.icon {
+  font-size: 36px; /* Keep icon size the same */
+  color: white; /* Default icon color */
+}
+
+.goals-icon {
+  background-color: #d92a2a95; /* Light red background */
+}
+
+.dishes-icon {
+  background-color: #505091; /* Light blue background */
+}
+
+.menus-icon {
+  background-color: rgba(23, 232, 207, 0.2); /* Light green background */
+}
+
+.goals-icon-img {
+  color: #e14747; /* Dark red icon color */
+}
+
+.dishes-icon-img {
+  color: #0000af; /* Dark blue icon color */
+}
+
+.menus-icon-img {
+  color: #1fab9d; /* Dark green icon color */
+}
+
+.arrow-icon {
+  font-size: 24px; /* Arrow icon size */
+  color: #333; /* Arrow color */
+  background-color: #ccc; /* Grey background */
+  border-radius: 50%; /* Rounded background */
+  padding: 10px; /* Space around the icon */
+  margin-left: auto; /* Push arrow icon to the right end */
+}
+
+@media (max-width: 1200px) {
+  .goals-popular-dishes-menus {
+    padding: 0;
+  }
+  .text {
+    font-size: 17px; /* Adjust text size */
+  }
+  .arrow-icon {
+    font-size: 12px; /* Arrow icon size */
+    padding: 6px;
+  }
+}
+
+@media (max-width: 992px) {
+  .goals-popular-dishes-menus {
+    padding: 0;
+  }
+
+  .text {
+    font-size: 14px; /* Adjust text size */
+  }
+  .arrow-icon {
+    font-size: 12px; /* Arrow icon size */
+    padding: 6px;
+  }
+}
+
+/* Mobile view adjustments */
+@media (max-width: 768px) {
+  .goals-popular-dishes-menus {
+    padding: 0;
+  }
+  .arrow-icon {
+    font-size: 12px; /* Arrow icon size */
+    padding: 6px;
+  }
+
+  .text {
+    font-size: 11px; /* Adjust text size */
+  }
+
+  .icons-containers {
+    width: 80px; /* Adjust container width */
+    height: 80px; /* Adjust container height */
+  }
+
+  .icon {
+    font-size: 28px; /* Adjust icon size */
+  }
+}
